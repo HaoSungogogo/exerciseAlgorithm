@@ -5,7 +5,8 @@ Using HashSet to record duplicate
 How to move fast pointer: if no duplicate
 How to move slow pointer and when to stop: if duplicate, slow++ and remove value in the Set.
                                            when remove the duplicate, stop.
-How to update the final solution: when fast++, test and find max.
+How to update the final solution: when fast++, test and find max.   
+
 
 public class Solution {
   public int longest(String input) {
