@@ -1,4 +1,4 @@
-the key for DP problem:
+The key for DP problem:
 1. find the meaning of each element in the table
 2. fill in the table
 
@@ -15,4 +15,5 @@ The relation with Recursion:
 ONE DIMENSION DP:
 
 if the weight of each smallest elemnet in the original data is identical/similar:
-	
+	This kind of problem is usually simple:
+		Linear scan and look back to the previous element.
