@@ -15,5 +15,15 @@ The relation with Recursion:
 ONE DIMENSION DP:
 
 if the weight of each smallest elemnet in the original data is identical/similar:
+	eg: identical -> 1 meter rope
+		similar -> a letter, a number
 	This kind of problem is usually simple:
-		Linear scan and look back to the previous element.
+		Linear scan and look back to the previous element!!
+
+	eg: Largest Ascending Subarray
+		Largest Ascending Subsequence
+		Cut Rope
+		Cut Palindrome
+
+if the weight is not same:
+	we usually need to try out all possible k that(i < k < j), M[i][j] = max(M[i][k], M[k][j])
