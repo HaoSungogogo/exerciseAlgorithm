@@ -11,3 +11,8 @@ The relation with Recursion:
 	a. base case
 	b. induction rule 
        (size(< n) subsolution-> size(n) solution)
+
+ONE DIMENSION DP:
+
+if the weight of each smallest elemnet in the original data is identical/similar:
+	
