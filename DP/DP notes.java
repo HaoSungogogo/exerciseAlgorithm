@@ -27,3 +27,12 @@ if the weight of each smallest elemnet in the original data is identical/similar
 
 if the weight is not same:
 	we usually need to try out all possible k that(i < k < j), M[i][j] = max(M[i][k], M[k][j])
+
+
+
+Two DIMENSION DP:
+
+the three prototypes as helper function:
+1: the largest Subarray sum
+2: the longest consecutive 1s
+3: the Path-Prefix problem.
