@@ -1,6 +1,7 @@
 Using two pointer.
  
-!! the result would include slow.
+!! the result would include slow, since the first element must be in the result and we need to
+   compare previous element first.
 
 public class Solution {
   public String deDup(String input) {
