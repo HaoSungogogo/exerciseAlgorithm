@@ -35,5 +35,5 @@ Classical Binary Search: while(left <= right)
 						 right = mid - 1;
 
 Variant Binary Search: while(left < right - 1)  (stop in advance and post processing)
-(find closet, last	   left = mid;
+(find closest, last	   left = mid;
  or first occurence)   right = mid; 
