@@ -23,3 +23,45 @@ Four popular interview questions:
 	4. Using multiple Stacks to implement a Deque
 
 Problem to solve: need to linear scan an Array or String to get the newest element.
+
+
+
+
+LinkedList
+ 
+class ListNode {
+	public int val;
+	public ListNode next;
+}
+
+Key points: 1. When you want to de-reference a ListNode, make sure it is not a null pointer.(NPE)
+			2. Never lost the control of the head of the LinkedList.
+
+Common interview questions
+1. Reverse LinkedList.
+	a. iterative way
+	b. recursive way
+
+2. Find the middle node of LinkedList
+	fast and slow pointer
+	while (fast.next != null && fast.next.next != null)
+	Stop in advance!!!
+
+3. Check if it has a cycle.
+	Using slow ans fast pointer.
+
+4. Insert in sorted LinkedList
+	Using only one cur pointer to traverse and STOP IN ADVANCE, which makes the location of insertion is cur.next.
+	while (cur.next != null && cur.next.value <= value)
+
+5. Merge two sorted LinkedList into one long sorted LinkedList
+	Using dummy node.
+
+6. Reorder LinkedList
+	a. parition
+	b. reverse
+	c. merge
+
+7. Partition the LinkedList
+
+
