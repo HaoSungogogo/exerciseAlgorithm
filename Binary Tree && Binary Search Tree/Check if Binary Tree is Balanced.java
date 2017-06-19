@@ -31,7 +31,7 @@ public class Solution {
 
 Time complexity:
 
-                  root  (getHeight = n / 2 + getHeight = n / 2)    O(n)
+                  root  (getHeight = n / 2 + getHeight = n / 2)    O(n)   n is the total number of nodes
                  /    \ 
         root.left     root.right (getHeight = n / 4 * 4)           O(n)
 
