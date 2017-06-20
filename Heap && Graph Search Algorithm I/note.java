@@ -56,6 +56,10 @@ Common Graph search algorithm:
  		}
 
 
+2. BFS2 (Best First Search)
+	Dijkstra Algorithm
+		Usage: Find the shortest path from a single node to any other nodes in that graph (single source node)
+		Data Structure: Priority Queue
 
 
 
