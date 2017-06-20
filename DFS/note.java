@@ -11,5 +11,8 @@ Key point to solve the problem:
 Problem categories:
 	a. Subset Problem -> n- branches method: for (int i = index; i < length; i++) -> dfs(level = i + 1)
 	b. Permutation Problem -> Using In Place Swap. for (int i = index; i < length; i++) -> swap(array, index, i)
+		Whenever every single permutation contains all elements in the initial input, then you should consider SWAP and SWAP.
+
 	c. Condition DFS
 	d. 99 cent
+

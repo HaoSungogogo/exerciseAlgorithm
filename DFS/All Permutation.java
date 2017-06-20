@@ -28,3 +28,5 @@ public class Solution {
 
 
 In place swap -> Permutation problem.
+
+Time Complexity: O(n!)
