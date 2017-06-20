@@ -37,6 +37,7 @@ class GraphNode {
 Common Graph search algorithm:
 
 1. BFS1 (Breadth First Search)
+Key Thought:
  a. First, Expand a node. 
  b. Generate its neighboring node. 
  c. Maintain a FIFO Queue: put all generated nodes in the Queue.
@@ -60,7 +61,16 @@ Common Graph search algorithm:
 	Dijkstra Algorithm
 		Usage: Find the shortest path from a single node to any other nodes in that graph (single source node)
 		Data Structure: Priority Queue
-
+		Key Thought: 
+		a). Initial State (start node)
+		b). Node Expansion / Generation rule!!!!
+		c). Termination condition (pqueue is empty)
+	Property：
+		a). One node can be expanded only once.
+		b). One node can be generated more than once. (cost can be reduced over time)
+		c). All the cost of the nodes that are expanded are monotonically.
+		d). Time complexity: O(nlogn)
+		e). When a node is poped out for expansion, its value is fixed which is equal to the shortest distance from start node.
 
 
 
