@@ -26,3 +26,27 @@ public class Solution {
     arr[j] = temp;
   }
 }
+
+
+
+public class Solution {
+  public String removeSpaces(String input) {
+    char[] arr = input.toCharArray();
+    int i = 0;
+    int j = 0;
+    while (j < arr.length) {
+      if (arr[j] == ' ' && (j == 0 || arr[j - 1] == ' ')) {    // two situation j == 0 or normal
+        j++;
+      } else {
+        arr[i++] = arr[j++];
+      }
+    }
+    if (i - 1 >= 0 && arr[i - 1] == ' ') {      // avoid NPE
+      return new String(arr, 0, i - 1);
+    } else {
+      return new String(arr, 0, i);
+    }
+  }
+}
+
+

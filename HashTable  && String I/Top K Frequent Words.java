@@ -1,6 +1,7 @@
 # Using HashMap and PriorityQueue.
 # Construct map using helper function.
 # Convert PriorityQueue to String array to print out using helper function.
+# Map.Entry<> type!!!     map.entrySet()!!!
 
 public class Solution {
   public String[] topKFrequent(String[] combo, int k) {
