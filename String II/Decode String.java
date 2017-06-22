@@ -46,7 +46,7 @@ class Solution {
 			int digit = getDigit(arr[j]);
 			if(digit > 2 && digit <= 9) {
 				j--;
-				for(int k = 0; k < digit; k++) {
+				for(int k = 0; k < digit; k++) {    / ## for 中condition条件句， k < X， X用定值，不要用容易改变的值，用到一半条件就跑了
 					res[slow--] = arr[j];
 				}
 			}else {

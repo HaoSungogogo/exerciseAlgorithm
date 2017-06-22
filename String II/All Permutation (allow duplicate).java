@@ -1,4 +1,6 @@
-// due to allow duplicate, we could use set to find whether it is duplicate or not.
+Due to allow duplicate, we could use set to find whether it is duplicate or not.
+Inplace swap and swap
+
 Using Set to rule out the duplicate element.
 
 public class Solution {
