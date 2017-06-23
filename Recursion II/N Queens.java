@@ -8,36 +8,34 @@ Using check func to check the validality of assignment.
 
 public class Solution {
   public List<List<Integer>> nqueens(int n) {
-    List<List<Integer>> res = new ArrayList<List<Integer>>();
-    List<Integer> list = new ArrayList<Integer>();
-    if(n <= 0) {
-      return res;
+    List<List<Integer>> list = new ArrayList<>();
+    if (n == 0) {
+      return list;
     }
-    dfs(0, n, list, res);
-    return res;
+    List<Integer> cur = new ArrayList<>();
+    dfs(list, cur, n);
+    return list;
   }
-  
-  private void dfs(int row, int level, List<Integer> list, List<List<Integer>> res) {
-    if(row == level) {
-      res.add(new ArrayList<Integer>(list));
+  private void dfs(List<List<Integer>> list, List<Integer> cur, int n) {
+    if (cur.size() == n) {
+      list.add(new ArrayList(cur));
       return;
     }
-    for(int i = 0; i < level; i++) {
-      int size = list.size();
-      if(check(list, i)) {
-        list.add(i);
-        dfs(row + 1, level, list, res);
-        list.remove(size);
+    for (int i = 0; i < n; i++) {
+      if (check(cur, i)) {
+        cur.add(i);
+        dfs(list, cur, n);
+        cur.remove(cur.size() - 1);
       }
     }
   }
-  private boolean check(List<Integer> list, int pt) {
-    int size = list.size();
-    for(int i = 0; i < size; i++) {
-      if(pt == list.get(i) || Math.abs(pt - list.get(i)) == size - i) {
+  private boolean check(List<Integer> cur, int n) {
+    for (int i = 0; i < cur.size(); i++) {
+      if (cur.get(i) == n || Math.abs(cur.get(i) - n) == cur.size() - i) {
         return false;
       }
     }
     return true;
   }
 }
+
