@@ -27,10 +27,15 @@ if the weight of each smallest elemnet in the original data is identical/similar
 
 if the weight is not same:
 	we usually need to try out all possible k that(i < k < j), M[i][j] = max(M[i][k] / + / - / * / M[k][j])
+->
+	左大段，右大段。 rope cutting
+	左大段，右小段。 rope cutting ／ Dictionary world problem （大段，using history result()
 
 
 
 Two DIMENSION DP:
+	Edit Distance(M[i][j] = min(M[i - 1][j - 1], 1 + M[i - 1][j], 1 + M[i - 1][j - 1], 1 + M[i][j - 1]))
+	Largest Square of 1s in a binary matrix (M[i][j] = min(M[i - 1][j - 1], M[i - 1][j], M[i - 1][j - 1], M[i][j - 1]))
 
 The three prototypes as helper function:
 1: the largest Subarray sum
