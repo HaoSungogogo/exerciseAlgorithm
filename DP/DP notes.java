@@ -38,6 +38,47 @@ Two DIMENSION DP:
 	Largest Square of 1s in a binary matrix (M[i][j] = min(M[i - 1][j - 1], M[i - 1][j], M[i - 1][j - 1], M[i][j - 1]))
 
 The three prototypes as helper function:
+
 1: the largest Subarray sum
+public class Solution {
+  public int largestSum(int[] array) {
+    int local = array[0];
+    int max = local;
+    for (int i = 1; i < array.length; i++) {
+      if (local < 0) {
+        local = array[i];
+      } else {
+        local += array[i];
+      }
+      max = Math.max(max, local);
+    }
+    return max;
+  }
+}
+
+
 2: the longest consecutive 1s
-3: the Path-Prefix problem.
+
+public class Solution {
+  public int longest(int[] array) {
+   if (array == null || array.length == 0) {
+     return 0;
+   }
+   int local = array[0];
+   int longest = local;
+   for (int i = 1; i < array.length; i++) {
+     if (array[i] == 0) {
+       local = 0;
+     } else {
+       local += 1;
+     }
+     longest = Math.max(longest, local);
+   }
+   return longest;
+  }
+}
+
+3: the Path-Prefix Sum problem.
+
+
+
