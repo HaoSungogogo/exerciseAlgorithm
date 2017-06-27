@@ -30,11 +30,11 @@ How to solve k-something.
 
 
 LCA problem:
-1) classical one.
+1) classical one. O(n)
 2) find k nodes LCA
 3) find two nodes LCA in the k-nary tree
 4) find k nodes LCA in the k-nary tree
-5) find two nodes LCA in the binary search tree
+5) find two nodes LCA in the binary search tree. O(height of Tree), it tree is balanced, O(logn) 
 6) classical problem with large tree (MapReduce way)
 
 Assuming we have 32 machines. In the level 5, we have 32 nodes.
