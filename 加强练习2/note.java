@@ -58,4 +58,18 @@ dfs(node) {
 3. Binary Search Tree
 Using the bst property to traverse.
 a) Closest Number In Binary Search Tree -> maintain a solution node.
+b) Largest Number Smaller In Binary Search Tree
+c) Delete in Binary Search Tree
+  1) the node is leaf node, delete the node.
+  2) the node has only one not null child, delete the node and return its non-null child.
+  3) if the node has both left and right child, 
+		1. find the smallest node in the right subtree
+		2. copy the value from 12.5 to 12
+		3. recurse again to delete the step 1 node.
+
+
+
+
+
+
 
