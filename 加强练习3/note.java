@@ -27,3 +27,10 @@ Way of thinking:
 2. root top down path (直上直下)  'similar to dfs, similar to pre-order'
 Key point : keep a 'prefix path' from root while traversing.
 Passing down the prefix sum (value).
+
+Type 2:
+Tree Serialization -> inorder traverse extending.
+
+Type 3:
+Tree De-Serialization -> Reconstruct a tree by using xxx order and in-order.
+Way of Thinking: cut the global problem into two halves (recursively), and each half returns node of each subtree.
