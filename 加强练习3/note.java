@@ -33,4 +33,4 @@ Tree Serialization -> inorder traverse extending.
 
 Type 3:
 Tree De-Serialization -> Reconstruct a tree by using xxx order and in-order.
-Way of Thinking: cut the global problem into two halves (recursively), and each half returns node of each subtree.
+Way of Thinking: cut the global problem into two halves (recursively), and each half returns node of each subtree. 
