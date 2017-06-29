@@ -60,7 +60,7 @@ Using the bst property to traverse.
 a) Closest Number In Binary Search Tree -> maintain a solution node.
 b) Largest Number Smaller In Binary Search Tree
 c) Delete in Binary Search Tree
-  1) the node is leaf node, delete the node.
+  1) the node is leaf node, delete the node and return null.
   2) the node has only one not null child, delete the node and return its non-null child.
   3) if the node has both left and right child, 
 		1. find the smallest node in the right subtree
