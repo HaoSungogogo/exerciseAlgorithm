@@ -46,3 +46,10 @@ Detail:
 levels = 2 * (m + n + l)
 states = the number of types of parentheses
 
+3. 2 Sum problem
+Assumption: sorted?
+			optimize time or space?
+			duplicate?
+			return index?
+
+
