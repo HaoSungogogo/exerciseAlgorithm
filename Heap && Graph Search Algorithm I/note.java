@@ -65,6 +65,7 @@ Key Thought:
 		a). Initial State (start node)
 		b). Node Expansion / Generation rule!!!!
 		c). Termination condition (pqueue is empty)
+		d). Be care for deduplication
 	Property：
 		a). One node can be expanded only once.
 		b). One node can be generated more than once. (cost can be reduced over time)
