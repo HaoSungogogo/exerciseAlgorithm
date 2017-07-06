@@ -54,6 +54,12 @@ BFS2 steps:
 Problem Solving:
 1GB memory, two 100GB hard disk, sort 80GB integers of 64 bits.
 
+Assumption: 
+	80GB integer is put on HD1
+	Optimize the time?
+	Ascending
+	Maintain the original data
+
 External Sort -> Using external memory to sort.
 Step1:
 400 chunks -> 0.2 GB each
@@ -81,7 +87,24 @@ Binary reduction is read and write log400 times.
 2. Histogram problem.
 	1) Largest Rectangle In Histogram
 		a) 中心开花。 O(n^2)
-		b)
+		b) 单调栈： maintain a stack to store the indices of column forming the acending order.
+				   left border is current index, right border is the index of top element in the stack + 1
+	2) 直方图蓄水
+		a) 中心开花。 O(n^2)
+		b) DP
+		c) Optimized way.
+			Two pointer (i, j) and maintian a leftmax and rightmax
+			case1: leftmax < rightmax
+					calculate the water at i
+					i++
+			case2: letmax > rightmax 
+					calculate the water at j
+					j--
+			"this is because we only care about the min of leftmax and rightmax"
+	3) 三维蓄水
+		similar to above queston.
+		left and right -> the border
+		minheap to get the smallest one in the border -> exapand and generate the neighbor
 
 
 
@@ -92,9 +115,3 @@ Binary reduction is read and write log400 times.
 
 
 
-
-Q3 Assumption: 
-		80GB integer is put on HD1
-		Optimize the time?
-		Ascending
-		Maintain the original data
