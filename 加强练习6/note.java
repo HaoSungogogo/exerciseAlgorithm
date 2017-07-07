@@ -15,3 +15,8 @@
 	Data Structure
 	(1) HashMap
 	(2) Stack
+
+3. LRU
+	First to analyze use case.
+
+4. Voting Algorithm
