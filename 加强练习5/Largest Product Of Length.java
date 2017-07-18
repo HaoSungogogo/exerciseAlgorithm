@@ -59,3 +59,48 @@ public class Solution {
 }
 
 Array.sort() -> redefine the Comparator<String>
+
+
+Using bitmask to find common element.
+Not using pq to get cur max, only use for for 
+
+public class Solution {
+  public int largestProduct(String[] dict) {
+    Arrays.sort(dict, new Comparator<String>() {
+      public int compare(String s1, String s2) {
+        if (s1.length() == s2.length()) {
+          return 0;
+        }
+        return s1.length() > s2.length() ? -1 : 1;
+      }
+    });
+    int res = 0;
+    Map<String, Integer> bitMask = getBitMask(dict);
+    for (int i = 1; i < dict.length; i++) {
+      for (int j = 0; j < i; j++) {
+        int prod = dict[i].length() * dict[j].length();
+        if (prod < res) {
+          break;
+        }
+        int imask = bitMask.get(dict[i]);
+        int jmask = bitMask.get(dict[j]);
+        if ((imask & jmask) == 0) {
+          res = prod;
+        }
+      }
+    }
+    return res;
+  }
+  private Map<String, Integer> getBitMask(String[] dict) {
+    Map<String, Integer> map = new HashMap<>();
+    for (String s : dict) {
+      int mask = 0;
+      for (int i = 0; i < s.length(); i++) {
+        mask |= 1 << s.charAt(i) - 'a';
+      }
+      map.put(s, mask);
+    }
+    return map;
+  }
+}
+ 
