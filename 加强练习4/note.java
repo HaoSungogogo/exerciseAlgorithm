@@ -7,6 +7,9 @@ a) What does it store on each level?
 b) How many different states should we try to put on the each level?
 
 2.1 Subsets problem
+Subsets problem -> get element combination with the size not equal to the input size.
+
+
 2.1.1 classical subset problem
 2.1.2 How to divide an array into two parts, with their sum equals to each other
       -> Select some certain parts from an array to get certain sum.

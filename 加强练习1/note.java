@@ -30,12 +30,15 @@ How to solve k-something.
 
 
 LCA problem:
-1) classical one. O(n)
-2) find k nodes LCA
-3) find two nodes LCA in the k-nary tree
-4) find k nodes LCA in the k-nary tree
-5) find two nodes LCA in the binary search tree. O(height of Tree), it tree is balanced, O(logn) 
-6) classical problem with large tree (MapReduce way)
+1) classical one. O(n) (without parent pointer)
+2) clasiical one with parent pointer -> similar to merging the node of two single linkedlist. (since we have parent pointer, we could use our aimed TreeNode to traverse upside.)
+ a) using hashmap, record one path
+ b) getting two path length, move the lower node with the same level as higer node, move up together.
+3) find k nodes LCA
+4) find two nodes LCA in the k-nary tree
+5) find k nodes LCA in the k-nary tree
+6) find two nodes LCA in the binary search tree. O(height of Tree), it tree is balanced, O(logn) 
+7) classical problem with large tree (MapReduce way)
 
 Assuming we have 32 machines. In the level 5, we have 32 nodes.
 case1: both node a and b are within top 5 levels
