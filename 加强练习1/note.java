@@ -1,4 +1,7 @@
 1. Element Deduplication and Removal in the array
+a) leave only one duplicated elements
+b) allow to leave two duplicated elements.
+c) no duplicated elements
 隔板题：
 Two pointer: fast and slow with the same direction.
 Property:
